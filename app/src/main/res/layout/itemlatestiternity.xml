@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="870dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/itenary_ITE_ll"
+    android:visibility="visible"
+    android:background="@mipmap/travbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3498DB"
+       android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/daytext_ITE"
+            android:text="Day"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+        <TextView
+            android:id="@+id/time_ITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/daytext_ITE"
+            android:textSize="12sp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+        <TextView
+            android:id="@+id/dot_ITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=":"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/time_ITE"
+            android:textSize="12sp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+        <TextView
+            android:id="@+id/date_ITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/time_ITE"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+        <TextView
+            android:id="@+id/destination_ITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llview1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/carimg1"
+                android:id="@+id/transferImg_ITE"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="#424949"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lltranser_ITE"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/llview1">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/vetransferName_ITE"
+                android:textSize="10sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:id="@+id/vetype_ITE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/vename_ITTE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pickup Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tpickuptime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drop Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/tdroptime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/lltranser_ITE"
+            >
+
+            <TextView
+                android:id="@+id/hotelvoucher_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_rectanlge"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:text="E-Voucher"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:weightSum=".9"
+                android:id="@+id/llemoji_ITE"
+                android:enabled="false"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:id="@+id/smileysad_ITE"
+                    android:visibility="visible"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:id="@+id/smileysadgray_ITE"
+                    android:visibility="gone"
+                    />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutral_ITE"
+                    app:civ_circle_background_color="#F4D03F" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutralgray_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappy_ITE"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:visibility="visible"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappygray_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llview2">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#F5B041"
+                />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/hotelImg_ITE"
+            android:src="@mipmap/hotelimg"
+            android:layout_gravity="center"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="#F5B041"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/llhotel_ITE"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/llview2"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accommodation"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+        <TextView
+            android:id="@+id/hotelname_ITE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room Type: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/roomtype_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotel Star Category: "
+                    android:layout_marginTop="2dp"
+                    android:textSize="9sp" />
+
+
+                <ImageView
+                    android:id="@+id/hotelcate_ITE"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Meal Plan: "
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/mealplan_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/noroom_ITE"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_toRightOf="@id/llhotel_ITE"
+            >
+
+            <TextView
+                android:id="@+id/hotelvoucher1_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_rectanlge"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:text="E-Voucher"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:weightSum=".9">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:id="@+id/smileysad1_ITE"
+                    android:visibility="visible"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:id="@+id/smileysadgray1_ITE"
+                    android:visibility="gone"
+                    />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutral1_ITE"
+                    app:civ_circle_background_color="#F4D03F" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutralgray1_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappy1_ITE"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:visibility="visible"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappygray1_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llview3">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#3498DB" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/akshardham"
+            android:id="@+id/activityImg_ITE"
+            android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#3498DB" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/llactivity_ITE"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/llview3"
+            android:layout_marginTop="30dp">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Activity"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <TextView
+                android:id="@+id/otherActivityName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/astarttime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/aendtime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/llactivity_ITE"
+            >
+
+            <TextView
+                android:id="@+id/hotelvoucher2_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_rectanlge"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:text="E-Voucher"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:weightSum=".9">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:id="@+id/smileysad2_ITE"
+                    android:visibility="visible"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:id="@+id/smileysadgray2_ITE"
+                    android:visibility="gone"
+                    />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutral2_ITE"
+                    app:civ_circle_background_color="#F4D03F" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutralgray2_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappy2_ITE"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:visibility="visible"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappygray2_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llview4">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#C0392B" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/entanceImg_ITE"
+                android:src="@mipmap/entrance"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#C0392B" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/llenterance_ITE"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/llview4"
+            android:layout_marginTop="35dp">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="Entrance"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <TextView
+                android:id="@+id/entranceName_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/estarttime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/eendtime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/llenterance_ITE"
+            >
+
+            <TextView
+                android:id="@+id/hotelvoucher3_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_rectanlge"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:text="E-Voucher"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:weightSum=".9">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:id="@+id/smileysad3_ITE"
+                    android:visibility="visible"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:id="@+id/smileysadgray3_ITE"
+                    android:visibility="gone"
+                    />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutral3_ITE"
+                    app:civ_circle_background_color="#F4D03F"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutralgray3_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappy3_ITE"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:visibility="visible"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappygray3_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/llview5">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="#424949" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/transportstionImg_ITE"
+                android:src="@mipmap/carimg"
+                android:layout_gravity="center"/>
+            <View
+                android:layout_width="8dp"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:background="#424949" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/transportation_ITE"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/llview5"
+            android:layout_marginTop="35dp">
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:text="All Mode"
+                android:textColor="@android:color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/flightname_ITE"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:id="@+id/flighttype_ITE"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:id="@+id/flightclass_ITE"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flight No: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="10sp"
+                    android:id="@+id/flightno_ITE"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Destination: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/ffromdest_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Destination: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/ftodest_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival Date: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/farrivaldate_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/farrivaltime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure Date: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/fdeparturedate_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure Time: "
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/departuretime_ITE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/transportation_ITE"
+            >
+
+            <TextView
+                android:id="@+id/hotelvoucher4_ITE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/blue_rectanlge"
+                android:paddingLeft="5dp"
+                android:paddingTop="3dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="3dp"
+                android:text="E-Voucher"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginLeft="5dp"
+                android:weightSum=".9">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:id="@+id/smileysad4_ITE"
+                    android:visibility="visible"
+                    />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileysadite"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:id="@+id/smileysadgray4_ITE"
+                    android:visibility="gone"
+                    />
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutral4_ITE"
+                    app:civ_circle_background_color="#F4D03F" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileynuteralite"
+                    android:id="@+id/smileynutralgray4_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".3"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappy4_ITE"
+                    app:civ_circle_background_color="#F4D03F"
+                    android:visibility="visible"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".5"
+                    android:src="@mipmap/smileyhappyite"
+                    android:id="@+id/smileyhappygray4_ITE"
+                    app:civ_circle_background_color="@color/graycolor"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+

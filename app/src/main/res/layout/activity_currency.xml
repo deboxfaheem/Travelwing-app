@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/currencybg">
+
+        <ImageView
+            android:id="@+id/button_CUR"
+            android:layout_width="85dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/downarrow"
+            android:fontFamily="@font/futura_heavy_font"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:elevation="4dp"
+            app:fontFamily="@font/futura_heavy_font" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sender"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_field_background"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spinner_sen"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#2980B9"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/futura_heavy_font"
+                    android:gravity="right"
+                    android:spinnerMode="dialog"
+                    android:textColor="#2980B9"
+                    app:fontFamily="@font/futura_heavy_font" />
+
+                <EditText
+                    android:id="@+id/sendamt_CUR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="60dp"
+                    android:ems="10"
+                    android:fontFamily="@font/futura_heavy_font"
+                    android:gravity="center"
+                    android:hint="Enter Amount"
+                    android:inputType="number"
+                    android:textColor="#2980B9"
+                    android:textColorHint="#2980B9"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/futura_heavy_font" />
+
+                <TextView
+                    android:id="@+id/sendcur_CUR"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:fontFamily="@font/futura_heavy_font"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#2980B9"
+                    android:textColorHint="#2980B9"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/futura_heavy_font" />
+
+                <!-- <EditText
+                     android:id="@+id/sendcur_CUR"
+                     android:layout_width="150dp"
+                     android:layout_height="wrap_content"
+                     android:layout_alignBottom="@+id/textView4"
+                     android:layout_centerHorizontal="true"
+                     android:hint="USD"
+                     android:gravity="center"
+                     android:textColorHint="#5F6A6A"
+                     android:layout_gravity="center"
+                     android:textSize="34sp"
+                     android:ems="10"
+                     android:layout_marginTop="50dp"/>-->
+
+                <!-- <Spinner
+                     android:id="@+id/planets_spinner"
+                     android:text="INDIAN RUPEE"
+                     android:textColor="#1A5276"
+                     android:layout_width="150dp"
+                     android:gravity="center"
+                     android:layout_gravity="center"
+                     android:layout_height="wrap_content"
+                     android:layout_alignTop="@+id/textView5"
+                     android:layout_marginTop="30dp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_clientlogin"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/ll_sender"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/regiter_btn_background"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/reccur_CUR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:ems="10"
+                    android:fontFamily="@font/futura_heavy_font"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#FBFCFC"
+                    android:textColorHint="#FBFCFC"
+                    android:textSize="20sp"
+                    app:fontFamily="@font/futura_heavy_font" />
+
+                <TextView
+                    android:id="@+id/recamt_CUR"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:ems="10"
+                    android:fontFamily="@font/futura_heavy_font"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:textColor="#FBFCFC"
+                    android:textColorHint="#FBFCFC"
+                    android:textSize="25sp"
+                    app:fontFamily="@font/futura_heavy_font" />
+
+                <Spinner
+                    android:id="@+id/spinner_rec"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#FBFCFC"
+                    android:layout_marginTop="60dp"
+                    android:fontFamily="@font/futura_heavy_font"
+                    android:gravity="center"
+                    android:spinnerMode="dialog"
+                    android:textColor="#FBFCFC"
+                    app:fontFamily="@font/futura_heavy_font" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+

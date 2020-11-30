@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/leftarrow"
+        android:id="@+id/icon_REG"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/accountlogo"
+        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter the NAME, Mobile No &amp; Email-ID"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/futura_heavy_font"
+        app:fontFamily="@font/futura_heavy_font"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" the Field below to Registration."
+        android:textSize="14sp"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/blue"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/futura_heavy_font"
+        app:fontFamily="@font/futura_heavy_font"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:background="@drawable/register_field_background"
+        android:id="@+id/llfistname">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/username"
+            android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/firstname_REG"
+                android:textColorHint="@color/black"
+                android:hint="First Name"
+                android:background="#D7DBDD"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/register_field_background"
+        android:id="@+id/lllastname"
+        android:layout_below="@+id/llfistname">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/username"
+            android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/lastname_REG"
+                android:textColorHint="@color/black"
+                android:hint="Last Name"
+                android:background="#D7DBDD"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/register_field_background"
+        android:id="@+id/llmobileno"
+        android:layout_below="@+id/lllastname">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mobile"
+            android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/mobile_REG"
+                android:textColorHint="@color/black"
+                android:hint="Mobile No"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="#D7DBDD"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/register_field_background"
+        android:id="@+id/llemail"
+        android:layout_below="@id/llmobileno">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/mail"
+            android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/email_REG"
+                android:textColorHint="@color/black"
+                android:hint="E-mail ID"
+                android:background="#D7DBDD"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/emailcheck_REG"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue"
+            android:layout_gravity="center"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_below="@+id/llemail"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By Registry in, you agree to Company &amp;"
+            android:textSize="13sp"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginTop="15dp"
+            android:id="@+id/byregistry"
+            android:layout_below="@+id/emailcheck_REG"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Representative to Contact you."
+            android:textSize="13sp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:id="@+id/represtative"
+            android:layout_below="@id/byregistry"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:id="@+id/btn_REG"
+            android:text="Register"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/login_btn_background"
+             android:layout_below="@id/represtative"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

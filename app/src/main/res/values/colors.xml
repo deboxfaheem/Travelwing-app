@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#364FD5</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="Whitecolor">#ffffff</color>
+    <color name="header_text_color">#fff</color>
+    <color name="fragment_background_color">#FCFCF7</color>
+    <color name="color_pax">#3F51B5</color>
+    <color name="blue">#2A93D5</color>
+    <color name="red">#D73A31</color>
+    <color name="peach">#FA898A</color>
+    <color name="inovice_textcolor">#D80F1120</color>
+    <color name="header_color">#4DB5B5BB</color>
+    <color name="tiles_back">#00000000</color>
+    <color name="home_background">#5E787C7E</color>
+    <color name="hotel_color">#FF9800</color>
+    <color name="cruise_color">#03A9F4</color>
+    <color name="transfer_color">#F44336</color>
+    <color name="airlines_color">#3F51B5</color>
+    <color name="sight_color">#4CAF50</color>
+    <color name="Blackcolor">#80000000</color>
+    <color name="darkgarycolor">#95000000</color>
+    <color name="Blackcolor2">#a5a5a5</color>
+    <color name="graycolor">#22000000</color>
+    <color name="header_color_black">#000</color>
+    <color name="colorindicator">#33000000</color>
+    <color name="rating_inactive">#f8b83b</color>
+    <color name="rating_active">#f8b83b</color>
+    <color name="gradient_start">#5770f3</color>
+    <color name="gradient_end">#8e5aeb</color>
+    <color name="profile_desc">#D1D1FF</color>
+    <color name="bg_meta_container">#000000</color>
+    <color name="profile_default_tint">#e0e0e0</color>
+    <color name="headertextcolor_profile">#000</color>
+</resources>

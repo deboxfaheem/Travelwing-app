@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/invoice_fragment"
+    android:orientation="vertical"
+    android:background="@color/fragment_background_color"
+    tools:context=".Fragments.InvoiceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background_color"
+        >
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progress_bar_invoice"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:visibility="visible"
+                android:background="@drawable/allheaderimage"
+                android:orientation="horizontal"
+                android:layout_height="56dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".28"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                        android:id="@+id/back_icon"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="TRIP FEEDBACK"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/form_padding_top"
+                    android:gravity="left|center"
+                    android:textColor="@color/darkgarycolor"
+                    android:textSize="@dimen/textsize_header2"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ></LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/Whitecolor"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Day Wise Itinerary"/>
+
+
+            <LinearLayout
+                android:id="@+id/recyclerViewsss"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:weightSum="3"
+                android:orientation="vertical"
+
+                >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:cardElevation="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="7dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="4"
+                        android:id="@+id/ratings"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="10dp"
+                            android:padding="5dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="4"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="3"
+                                    android:padding="10dp"
+                                    android:src="@drawable/starratingicon8"
+                                    android:layout_height="0dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="RATINGS"
+                                    android:paddingBottom="5dp"
+                                    android:textColor="@color/header_color_black"
+                                    android:textSize="@dimen/utilitiestextview"
+                                    android:gravity="center|top"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height=".1dp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/Blackcolor2"
+                                    ></LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="4"
+                            android:gravity="center"
+                            android:layout_weight="2.7"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/feeback_layout_textsize"
+                                android:text="Please rate your trip."/></LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:cardElevation="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="7dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="4"
+                        android:id="@+id/experience"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="5dp"
+                            app:cardElevation="10dp"
+                            android:padding="5dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="4"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="3"
+                                    android:padding="10dp"
+                                    android:src="@drawable/experiencetrip"
+                                    android:layout_height="0dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="EXPERIENCE"
+                                    android:textColor="@color/header_color_black"
+                                    android:textSize="@dimen/utilitiestextview"
+                                    android:gravity="center|top"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height=".1dp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/Blackcolor2"
+                                    ></LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="4"
+                            android:gravity="center"
+                            android:layout_weight="2.7"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="9dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/feeback_layout_textsize"
+                                android:text="Share your experience and help us to serve you better in future."/>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:cardElevation="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="7dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="4"
+                        android:id="@+id/experience1"
+                        android:padding="@dimen/form_padding_top"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="4"
+                            android:gravity="center"
+                            android:layout_weight="1.3"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_weight="3"
+                                android:padding="10dp"
+                                android:src="@drawable/experiencetrip"
+                                android:layout_height="0dp"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:text="EXPERIENCE"
+                                android:paddingBottom="5dp"
+                                android:textColor="@color/header_color_black"
+                                android:textSize="@dimen/utilitiestextview"
+                                android:gravity="center|top"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width=".2dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/Blackcolor2"
+                            ></LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="4"
+                            android:gravity="center"
+                            android:layout_weight="2.7"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="3dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/feeback_layout_textsize"
+                                android:text="Share your experience and help us to serve you better in future."/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:cardElevation="7dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="7dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="4"
+
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1.7"
+                            android:padding="10dp"
+                            android:src="@drawable/experiencetrip"
+                            android:layout_height="0dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".7"
+                            android:text="EXPERIENCE"
+                            android:textColor="@color/header_color_black"
+                            android:textSize="@dimen/utilitiestextview"
+                            android:gravity="center|top"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height=".1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/Blackcolor2"
+                            ></LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textSize="@dimen/feeback_layout_textsize"
+                            android:text="Share your experience and help us to serve you better in future."/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    app:cardElevation="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="7dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="4"
+                        android:id="@+id/pictures"
+                        android:orientation="horizontal"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:layout_margin="15dp"
+                            app:cardCornerRadius="5dp"
+                            android:padding="5dp"
+                            app:cardElevation="10dp"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="4"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="3"
+                                    android:padding="10dp"
+                                    android:src="@drawable/pictures"
+                                    android:layout_height="0dp"
+                                    />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:text="PICTURES"
+                                    android:paddingBottom="5dp"
+                                    android:textColor="@color/header_color_black"
+                                    android:textSize="@dimen/utilitiestextview"
+                                    android:gravity="center|top"
+                                    />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height=".1dp"
+                                    android:visibility="gone"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:background="@color/Blackcolor2"
+                                    ></LinearLayout>
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:weightSum="4"
+                            android:gravity="center"
+                            android:layout_weight="2.7"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:textSize="@dimen/feeback_layout_textsize"
+                                android:text="Post pictures and share wonderful memories of your trip."/>
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:cardElevation="7dp"
+                    android:layout_margin="20dp"
+                    android:padding="5dp"
+                    android:visibility="gone"
+                    app:cardCornerRadius="7dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="4"
+                        android:id="@+id/pictures2"
+                        android:orientation="vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_weight="1.7"
+                            android:padding="10dp"
+                            android:src="@drawable/pictures"
+                            android:layout_height="0dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".7"
+                            android:text="PICTURES"
+                            android:textColor="@color/header_color_black"
+                            android:textSize="@dimen/utilitiestextview"
+                            android:gravity="center|top"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height=".1dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/Blackcolor2"
+                            ></LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5"
+                            android:gravity="center|top"
+                            android:padding="10dp"
+                            android:textSize="@dimen/feeback_layout_textsize"
+                            android:text="Post pictures and share wonderful memories of your trip."/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+

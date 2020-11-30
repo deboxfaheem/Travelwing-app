@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/financebg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#0D0B01"
+        android:gravity="left"
+        android:text="Finance"
+        android:textCursorDrawable="@color/black"
+        android:fontFamily="@font/futura_heavy_font"
+        app:fontFamily="@font/futura_heavy_font"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background"
+        android:id="@+id/ll_travels_DOC">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/total"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:hint="Total Amount"
+            android:background="@color/white"
+            android:textCursorDrawable="@color/black"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/total_FIN"
+                android:text="Total Amount"
+                android:background="@color/white"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:background="@drawable/docvoucher_field_background">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/reciever"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColorHint="@color/black"
+                    android:gravity="center"
+                    android:hint="Received"
+                    android:background="@color/white"
+                    android:textCursorDrawable="@color/black"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:id="@+id/received_FIN"
+                    android:text="Received"
+                    android:background="@color/white"
+                    android:textCursorDrawable="@color/black"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/pending"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColorHint="@color/black"
+                android:gravity="center"
+                android:hint="Pending"
+                android:background="@color/white"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/pending_FIN"
+                android:text="Pending"
+                android:background="@color/white"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/query"
+            android:layout_marginLeft="20dp" />
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="Query Id"
+                android:background="@color/white"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:id="@+id/query_FIN"
+                android:text="Query"
+                android:background="@color/white"
+                android:textCursorDrawable="@color/black"
+                android:fontFamily="@font/futura_heavy_font"
+                app:fontFamily="@font/futura_heavy_font"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"/>
+
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+

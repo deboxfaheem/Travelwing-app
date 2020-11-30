@@ -1,0 +1,214 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:id="@+id/linear_otp"
+    android:background="@drawable/otp_background"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="CODE VERIFICATION"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/futura_heavy_font"
+        app:fontFamily="@font/futura_heavy_font"
+        />
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:weightSum="2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:id="@+id/login_linear"
+        android:layout_margin="20dp"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please Enter PIN to proceed further."
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:lineSpacingExtra="3dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#fff"
+            android:id="@+id/tv_toptext"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:hint="USERNAME"
+            android:weightSum="1"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#1562AC"
+            >
+
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:pinWidth="40dp"
+                android:outlineAmbientShadowColor="@color/Whitecolor"
+                app:pinHeight="50dp"
+                app:pinLength="4"
+                app:splitWidth="10dp"
+                app:cursorVisible="true"
+                app:forceKeyboard="true"
+                app:hint="0"
+                app:inputType="number"
+                app:password="false"
+
+                ></com.goodiebag.pinview.Pinview>
+
+
+
+
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:id="@+id/otp_ed"
+                android:visibility="visible"
+                android:hint="otp"
+                android:layout_marginTop="0dp"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColorHint="#000"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:layout_marginTop="0dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/gothamlight"
+                    android:drawableTint="@color/colorPrimary"
+                    android:hint="Mobile No."
+                    android:id="@+id/mob"
+                    android:backgroundTint="#000"
+                    android:textSize="12dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textColorHighlight="#000"/>
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET THE OTP"
+            android:shadowColor="@android:color/transparent"
+            android:id="@+id/askotp"
+            android:textSize="18dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:shadowColor="@android:color/transparent"
+            android:id="@+id/getotp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/verify_button"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:gravity="right"
+            android:paddingTop="5dp"
+            android:text="Resend PIN?"
+            android:id="@+id/resend_otp"
+            android:textColor="#B2E91E63"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login with OTP"
+            android:textSize="22dp"
+            android:fontFamily="@font/calibri"
+            android:textColor="#070707"
+            android:visibility="gone"
+            android:id="@+id/forgot_password"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:orientation="vertical"
+
+        >
+
+
+           </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

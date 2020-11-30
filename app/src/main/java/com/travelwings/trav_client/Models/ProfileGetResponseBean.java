@@ -1,0 +1,25 @@
+package com.travelwings.trav_client.Models;
+
+import android.util.Log;
+
+import com.google.gson.Gson;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class ProfileGetResponseBean implements Serializable {
+    public String status;
+    public ArrayList<ProfileGetModel> results;
+
+    public static ProfileGetResponseBean fromJson(String json) {
+        try {
+            Gson gson = new Gson();
+            return gson.fromJson(json, ProfileGetResponseBean.class);
+        }catch (Exception e) {
+            e.printStackTrace();
+            Log.e("Error", "Response: " + e.getMessage() );
+            return null;
+        }
+    }
+
+}

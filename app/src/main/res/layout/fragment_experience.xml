@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/loadingpage_withottravcrm_smaller2"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_marginBottom="-24dp"
+        android:text="How was your experience?"
+        android:textColor="@color/darkgarycolor"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/review_box_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.53"
+        android:gravity="top"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_bg"
+        android:hint="Describe your experience here..."
+        android:padding="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/submitreview"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/document_details_background"
+        android:layout_height="0dp"
+        android:text="SUBMIT"
+        android:textColor="@color/Whitecolor"
+        android:layout_weight=".6"/>
+
+</LinearLayout>

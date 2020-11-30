@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<FrameLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:visibility="visible"
+        android:background="@drawable/allheaderimage"
+        android:orientation="horizontal"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".28"
+            android:weightSum="1"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:id="@+id/back_icon_PROFILE"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="MY PROFILE"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:gravity="left|center"
+            android:textColor="@color/darkgarycolor"
+            android:textSize="20dp"
+            android:layout_weight="1.5"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            ></LinearLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_toolbar_profile" />
+
+
+    <include layout="@layout/content_main_profile" />
+
+</LinearLayout>

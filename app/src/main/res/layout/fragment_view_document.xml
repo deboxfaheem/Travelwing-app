@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/invoice_fragment"
+    android:orientation="vertical"
+    android:background="@color/fragment_background_color"
+    tools:context=".Fragments.InvoiceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background_color"
+        >
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progress_bar_invoice"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:visibility="visible"
+                android:background="@drawable/allheaderimage"
+                android:orientation="horizontal"
+                android:layout_height="56dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".28"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                        android:id="@+id/back_icon"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="MY TRIP ITINERARY"
+                    android:textStyle="bold"
+                    android:id="@+id/title_doc"
+                    android:paddingLeft="@dimen/form_padding_top"
+                    android:gravity="left|center"
+                    android:textColor="@color/darkgarycolor"
+                    android:textSize="@dimen/textsize_header2"
+                    android:layout_weight="1.5"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ></LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:id="@+id/clicktoadd"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                android:textColor="@color/Whitecolor"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Click to add"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_doc"
+        android:orientation="vertical"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+

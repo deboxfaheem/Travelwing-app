@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="250dp"
+    android:layout_width="260dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/cancel"
+        android:id="@+id/cancel_DIALOG"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+<LinearLayout
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    android:orientation="horizontal"
+    android:weightSum=".9"
+    android:layout_marginTop="@dimen/dimen_20dp"
+    android:padding="@dimen/dimen_20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/smilysadgray"
+        android:id="@+id/sad_gray_emoji_ITE"
+        android:layout_weight=".3"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/smilysad"
+        android:id="@+id/sad_emoji_ITE"
+        android:layout_weight=".3"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/smilyneutralgray"
+        android:id="@+id/nuteral_gray_emoji_ITE"
+        android:layout_weight=".3"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/smilyneutral"
+        android:id="@+id/nuteral_emoji_ITE"
+        android:layout_weight=".3"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/smilyhappygray"
+        android:id="@+id/happy_gray_emoji_ITE"
+        android:layout_weight=".3"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/smilyhap"
+        android:id="@+id/happy_emoji_ITE"
+        android:layout_weight=".3"
+        android:visibility="gone"/>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+       android:textColorHint="@color/black"
+        android:id="@+id/name_FEED"
+        android:textSize="14sp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/futura_heavy_font"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone"
+        app:fontFamily="@font/futura_heavy_font"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="14sp"
+        android:id="@+id/submit_SAD"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_gravity="center"
+        android:background="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/futura_heavy_font"
+        app:fontFamily="@font/futura_heavy_font" />
+</RelativeLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/invoice_fragment"
+    android:orientation="vertical"
+    android:background="@color/fragment_background_color"
+    tools:context=".Fragments.InvoiceFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background_color"
+        >
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/progress_bar_invoice"
+            android:layout_centerInParent="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="2"
+                android:visibility="visible"
+                android:background="@drawable/allheaderimage"
+                android:orientation="horizontal"
+                android:layout_height="56dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".28"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                        android:id="@+id/back_icon"
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="RATINGS"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/form_padding_top"
+                    android:gravity="left|center"
+                    android:textColor="@color/darkgarycolor"
+                    android:textSize="@dimen/textsize_header2"
+                    android:layout_weight="1.5"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    ></LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textColor="@color/Whitecolor"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="Day Wise Itinerary"/>
+
+
+
+           <LinearLayout
+                android:id="@+id/recyclerViewsss"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+               android:orientation="vertical"
+                android:layout_weight="10"
+                >
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:weightSum="3"
+                   android:orientation="vertical">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:gravity="bottom"
+                       android:padding="@dimen/form_padding_top"
+                       >
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:textStyle="bold"
+                           android:padding="@dimen/form_padding"
+                           android:lineSpacingExtra="5dp"
+                           android:fontFamily="@font/gothamlight"
+                           android:textSize="@dimen/emoji_layout_textsize"
+                           android:textColor="@color/Blackcolor"
+                           android:text="Please rate your experience by clicking on any of the emojies below"
+
+                           />
+
+                   </LinearLayout>
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight=".8"
+                       android:orientation="horizontal"
+                       android:weightSum="3"
+                       android:gravity="center">
+
+                       <RadioGroup
+                           android:id="@+id/radioGroup1"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:baselineAligned="false"
+                           android:gravity="center"
+                           android:padding="@dimen/form_padding_top"
+                           android:orientation="horizontal">
+
+                           <RadioButton
+                               android:id="@+id/sad_emoji"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:button="@null"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/emoji_background"
+                               android:checked="false"
+                               android:padding="9dp"
+                               android:drawableTop="@drawable/sadgray"
+                               android:gravity="center"
+                               android:paddingLeft="9dp"
+                               android:fontFamily="@font/calibri"
+                               android:paddingRight="8dp"
+                               android:drawablePadding="10dp"
+                               android:paddingTop="@dimen/bottom_nav_padding_top"
+                               android:text="Sad"
+
+                               android:textColor="#000"
+                               android:textSize="@dimen/bottom_nav_textsize"                />
+
+                           <RadioButton
+                               android:id="@+id/neutral_emoji"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:button="@null"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/emoji_background"
+                               android:checked="false"
+                               android:padding="9dp"
+                               android:drawableTop="@drawable/neutralgray"
+                               android:gravity="center"
+                               android:paddingLeft="9dp"
+                               android:fontFamily="@font/calibri"
+                               android:paddingRight="8dp"
+                               android:drawablePadding="10dp"
+                               android:paddingTop="@dimen/bottom_nav_padding_top"
+                               android:text="Neutral"
+
+                               android:textColor="#000"
+                               android:textSize="@dimen/bottom_nav_textsize"                />
+
+                           <RadioButton
+                               android:id="@+id/happyemoji"
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:layout_weight="1"
+                               android:button="@null"
+                               android:layout_margin="5dp"
+                               android:background="@drawable/emoji_background"
+                               android:checked="false"
+                               android:padding="9dp"
+                               android:drawableTop="@drawable/happygray"
+                               android:gravity="center"
+                               android:paddingLeft="9dp"
+                               android:fontFamily="@font/calibri"
+                               android:paddingRight="8dp"
+                               android:drawablePadding="10dp"
+                               android:paddingTop="@dimen/bottom_nav_padding_top"
+                               android:text="Happy"
+
+                               android:textColor="#000"
+                               android:textSize="@dimen/bottom_nav_textsize"                />
+
+
+
+
+
+
+                       </RadioGroup>
+
+
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="1"
+                       android:gravity="center|top"
+                       android:padding="@dimen/form_padding"
+                       >
+
+                       <Button
+                           android:id="@+id/submit_emoji"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="@dimen/form_padding_top"
+                           android:background="@drawable/document_details_background"
+                           android:backgroundTint="@color/colorAccent"
+                           android:fontFamily="@font/gothamlight"
+                           android:gravity="center"
+                           android:text="SUBMIT"
+                           android:textColor="@color/Whitecolor"
+                           android:textSize="@dimen/emoji_layout_textsize"
+                           android:textStyle="bold"
+
+                           />
+
+
+                   </LinearLayout>
+
+
+
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+

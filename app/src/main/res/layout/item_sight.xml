@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:gravity="center|top"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8:00"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/timme"
+                    android:textColor="#000"
+                    android:textSize="11dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="4dp"
+                android:id="@+id/linear_one"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:background="#4CAF50"
+                android:layout_height="10dp"
+                >
+            </LinearLayout>
+            <ImageView
+                android:layout_width="40dp"
+                android:gravity="center"
+                android:text="1"
+                android:padding="8dp"
+                android:id="@+id/imagee"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:textSize="12dp"
+                android:background="@drawable/circle_shape_sight"
+                android:layout_height="40dp" />
+            <LinearLayout
+                android:layout_width="4dp"
+                android:id="@+id/linear_two"
+                android:layout_below="@+id/imagee"
+                android:orientation="horizontal"
+                android:layout_marginLeft="17dp"
+                android:background="#4CAF50"
+                android:layout_height="40dp"
+                >
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/picture"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10"
+                android:weightSum="5"
+                android:paddingLeft="5dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.3"
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_height="0dp"
+
+                    >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".8"
+                        android:layout_height="match_parent"
+                        android:text="my air"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingRight="5dp"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:id="@+id/title_post"
+                        android:gravity="center|left"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".2"
+                        android:layout_height="match_parent"
+                        android:text="E-Voucher"
+                        android:paddingBottom="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="2dp"
+                        android:gravity="center|top"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="9dp"
+                        android:background="@drawable/evoucher_background"
+                        android:layout_alignParentRight="true"/>
+
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="hgdfghgdfh"
+                    android:id="@+id/adrress"
+                    android:gravity="left|center"
+                    android:textSize="11dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/price"
+                    android:gravity="left|center|top"
+                    android:textSize="11dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"></LinearLayout>
+                    <RadioGroup
+                        android:id="@+id/radioGroup_sight"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/sad_emoji_sight"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:button="@null"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:drawableTop="@drawable/sademojigray"
+                            android:gravity="center"
+                            android:drawablePadding="10dp"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#000"
+                            android:textSize="@dimen/bottom_nav_textsize"                />
+
+                        <RadioButton
+                            android:id="@+id/neutral_emoji_sight"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:button="@null"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:drawableTop="@drawable/neutralemoji"
+                            android:gravity="center"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#000"
+                            android:textSize="@dimen/bottom_nav_textsize"                />
+
+                        <RadioButton
+                            android:id="@+id/happy_emoji_sight"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:button="@null"
+                            android:layout_weight="1"
+                            android:checked="false"
+                            android:drawableTop="@drawable/happyemojigray"
+                            android:gravity="center"
+                            android:fontFamily="@font/calibri"
+                            android:textColor="#000"
+                            android:textSize="@dimen/bottom_nav_textsize"                />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        android:background="@color/header_color">
+
+
+        <LinearLayout
+            android:layout_width="4dp"
+            android:layout_height="1dp"
+            android:background="#4CAF50"
+            android:layout_marginLeft="67dp"></LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

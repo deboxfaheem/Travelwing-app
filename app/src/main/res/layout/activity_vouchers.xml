@@ -1,0 +1,283 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/invoicebg">
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="45dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background"
+        android:weightSum="2"
+        android:id="@+id/ll_hotel_VOC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColorHint="#1F618D"
+            android:gravity="left"
+            android:hint="Hotel Voucher"
+            android:background="@color/white"
+            android:textCursorDrawable="@color/black"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.2"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/hotellat"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background"
+        android:weightSum="2"
+        android:id="@+id/ll_flight_VOC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColorHint="#1F618D"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:hint="Flight Ticket"
+            android:background="@color/white"
+            android:textCursorDrawable="@color/black"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.2"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/flightlat"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background"
+        android:weightSum="2"
+        android:id="@+id/ll_insurance_VOC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColorHint="#1F618D"
+            android:gravity="left"
+            android:hint="Insurance Voucher"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textCursorDrawable="@color/black"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.2"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/insurancelat"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".9"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background"
+        android:weightSum="2"
+        android:id="@+id/ll_invoice_VOC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColorHint="#1F618D"
+            android:gravity="left"
+            android:hint="Invoice"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:textCursorDrawable="@color/black"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.6"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/invoicelat"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".4"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:padding="10dp"
+        android:background="@drawable/docvoucher_field_background"
+        android:weightSum="2"
+        android:id="@+id/ll_finance_VOC">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColorHint="#1F618D"
+            android:gravity="left"
+            android:hint="Finance"
+            android:textStyle="bold"
+            android:background="@color/white"
+            android:textCursorDrawable="@color/black"
+            android:fontFamily="@font/futura_heavy_font"
+            app:fontFamily="@font/futura_heavy_font"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/financelat"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".6"/>
+
+    </LinearLayout>
+
+
+
+ <!--<LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+     android:orientation="horizontal"
+     android:layout_marginLeft="25dp"
+     android:layout_marginRight="25dp"
+     android:layout_marginTop="15dp"
+     android:padding="10dp"
+     android:background="@drawable/docvoucher_field_background"
+     android:weightSum="2"
+     android:id="@+id/ll_doucment1_VOC">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColorHint="#1F618D"
+         android:gravity="left"
+         android:hint="Document 1"
+         android:background="@color/white"
+         android:textCursorDrawable="@color/black"
+         android:fontFamily="@font/futura_heavy_font"
+         app:fontFamily="@font/futura_heavy_font"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_weight="1.2"/>
+
+     <ImageView
+         android:layout_width="25dp"
+         android:layout_height="50dp"
+         android:src="@mipmap/document"
+         android:layout_gravity="center"
+         android:padding="8dp"
+         android:layout_marginLeft="50dp"
+         android:layout_weight=".8"/>
+
+ </LinearLayout>
+-->
+
+ <!--<LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="60dp"
+     android:orientation="horizontal"
+     android:layout_marginLeft="25dp"
+     android:layout_marginRight="25dp"
+     android:layout_marginTop="15dp"
+     android:padding="10dp"
+     android:background="@drawable/docvoucher_field_background"
+     android:weightSum="2"
+     android:id="@+id/ll_document2_VOC">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="16sp"
+         android:textColorHint="#1F618D"
+         android:gravity="left"
+         android:hint="Ducument 2"
+         android:background="@color/white"
+         android:textCursorDrawable="@color/black"
+         android:fontFamily="@font/futura_heavy_font"
+         app:fontFamily="@font/futura_heavy_font"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="10dp"
+         android:layout_weight="1.2"/>
+
+     <ImageView
+         android:layout_width="25dp"
+         android:layout_height="50dp"
+         android:src="@mipmap/document"
+         android:layout_gravity="center"
+         android:padding="8dp"
+         android:layout_marginLeft="50dp"
+         android:layout_weight=".8"/>
+
+ </LinearLayout>-->
+</LinearLayout>

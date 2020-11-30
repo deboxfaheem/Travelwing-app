@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.travelwings.trav_client" >
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"  tools:node="remove" />
+    <uses-permission android:name="android.permission.CAMERA"  tools:node="remove"  />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.travelwings.trav_client.DemoApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name="com.travelwings.trav_client.InvoiceWeb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.FinacneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.WebTransport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.WebEntrance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.WebTransferIte"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.VouchersAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.CurrencyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.UtilityAcitivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.ReferalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.TermWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.FlightWeb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.InsuranceWeb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.VolleyMultipart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.HotelWeb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.UpdatedProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.DocTrip"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.PersonalFrag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.TravDomestic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.Pertrav"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.TravelsWeb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.DocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.SuccessRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.RegisterLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.FeedBack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.WebViewAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.MainHomeActivity"
+            android:label="@string/title_activity_main_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.MainActivityProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.ImagePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.travelwings.trav_client.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.travelwings.trav_client.PDFActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.travelwings.trav_client.DemoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.travelwings.trav_client.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.travelwings.trav_client.ImageUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zfdang.multiple_images_selector.ImagesSelectorActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

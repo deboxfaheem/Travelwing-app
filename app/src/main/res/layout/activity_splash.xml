@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/my_layout"
+    android:background="@drawable/loadingpage_withottravcrm_smaller"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/travelwinglat"
+        android:layout_marginBottom="250dp"
+        android:id="@+id/splash_logo" />
+
+    <com.hanks.htextview.line.LineTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:visibility="gone"
+        android:fontFamily="@font/gothamlight"
+        android:paddingRight="10dp"
+        android:id="@+id/client_app"
+        android:textSize="16sp"
+        android:textColor="#9C000000"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        app:animationDuration="3000"
+        app:lineColor="#A16D7779"
+        app:lineWidth="4dp"/>
+
+
+</LinearLayout>

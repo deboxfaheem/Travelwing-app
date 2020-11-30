@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="135dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/travbg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/doctrip_field_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/akshardham"
+            android:id="@+id/img_DOCTRIP"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/doctrip_image_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Trip ID: "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="5ddddddd"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:id="@+id/queryid_DOCTRIP"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Name: "
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="5ddddddd"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:id="@+id/tripname_DOCTRIP"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip Duration: "
+                    android:textSize="10sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="5ddddddd"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:id="@+id/tripduration_DOCTRIP"
+                    android:fontFamily="@font/futura_heavy_font"
+                    app:fontFamily="@font/futura_heavy_font"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

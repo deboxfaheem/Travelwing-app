@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/linear_main"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/image_back"
+        android:src="@drawable/tripfeedback"/>
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Trip Itineraray"
+        android:id="@+id/texxt_main"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/textsize_main_item"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotobold"
+        android:paddingRight="10dp"
+        android:paddingLeft="@dimen/padding_bottom_home_icon"
+        android:layout_marginBottom="@dimen/padding_bottom_home_icon"
+            android:layout_alignParentBottom="true"/>
+</RelativeLayout>

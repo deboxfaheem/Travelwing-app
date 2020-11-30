@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+
+      >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:weightSum="10"
+       android:background="@drawable/backvacation"
+
+      >
+
+       <ImageView
+           android:layout_width="50dp"
+           android:layout_height="56dp"
+           android:padding="3dp"
+           android:id="@+id/back_icon"
+           android:src="@drawable/ic_navigate_before_black_24dp"/>
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:layout_weight="1"
+           android:background="@color/colorAccent"
+           android:src="@drawable/ic_profile"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight=".5"
+    android:text="Diksha Kashyap"
+    android:id="@+id/username"
+    android:textColor="@color/Whitecolor"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textSize="18dp"
+    android:fontFamily="@font/"
+    />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_margin="20dp"
+           android:weightSum="6"
+           android:layout_weight="8.5"
+           android:orientation="vertical"
+           android:background="@color/Whitecolor"
+           android:layout_height="0dp">
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight=".4"
+               android:padding="6dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="left|bottom"
+                       android:fontFamily="sans-serif-thin"
+                       android:textStyle="bold"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="Mobile No."/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight=".5"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+               <ImageView
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight="2"
+                   android:src="@drawable/ic_phonelink_lock_black"/>
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_weight="7"
+                   android:layout_height="match_parent"
+                   android:gravity="center|left"
+                   android:fontFamily="@font/gothamlight"
+                   android:textStyle="bold"
+                   android:id="@+id/mobileno."
+                   android:textColor="@color/inovice_textcolor"
+                   android:textSize="@dimen/textsize_editext"
+                   android:text="89634634635"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight=".1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@color/Blackcolor"></LinearLayout>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight=".5"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="left|bottom"
+                       android:fontFamily="sans-serif-thin"
+                       android:textStyle="bold"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="Email No."/>
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight=".5"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:src="@drawable/ic_local_post_office_black_24dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="center|left"
+                       android:fontFamily="@font/gothamlight"
+                       android:textStyle="bold"
+                       android:id="@+id/email_address"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="diksha@gmail.com"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight=".1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@color/Blackcolor"></LinearLayout>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight=".5"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="left|bottom"
+                       android:fontFamily="sans-serif-thin"
+                       android:textStyle="bold"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="D.O.B"/>
+               </LinearLayout>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight=".5"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:src="@drawable/ic_today_black_24dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="center|left"
+                       android:fontFamily="@font/gothamlight"
+                       android:textStyle="bold"
+                       android:id="@+id/dob"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="23-02-1995"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight=".1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@color/Blackcolor"></LinearLayout>
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:padding="10dp"
+                       android:src="@drawable/ic_today_black_24dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="center|left"
+                       android:textStyle="bold"
+                       android:fontFamily="@font/gothamlight"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="23-03-1994"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight=".1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@color/Blackcolor"></LinearLayout>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:padding="10dp"
+               android:weightSum="10"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:weightSum="10"
+                   android:layout_weight="9.8"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent"
+                       android:layout_weight="2"
+                       android:padding="10dp"
+                       android:src="@drawable/ic_location_on_black_24dp"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="8"
+                       android:layout_height="match_parent"
+                       android:gravity="center|left"
+                       android:textStyle="bold"
+                       android:id="@+id/personal_address"
+                       android:fontFamily="@font/gothamlight"
+                       android:textColor="@color/inovice_textcolor"
+                       android:textSize="@dimen/textsize_editext"
+                       android:text="Delhi,India"/>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight=".1"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginRight="20dp"
+                   android:background="@color/Blackcolor"></LinearLayout>
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/progress_profile"
+          android:layout_centerInParent="true"/>
+
+  </RelativeLayout>
+</FrameLayout>
